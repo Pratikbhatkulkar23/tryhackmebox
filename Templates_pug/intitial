@@ -1,0 +1,19 @@
+# Nmap 7.92 scan initiated Sat Nov  5 14:42:59 2022 as: nmap -v -sC -sV -oN nmap/intitial 10.10.143.112
+Nmap scan report for 10.10.143.112
+Host is up (0.28s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a9:65:dd:af:50:6f:10:8f:00:de:42:00:db:52:f9:d7 (RSA)
+|   256 bc:4e:11:c2:5c:9d:75:ac:6c:db:50:57:c6:fb:dd:bc (ECDSA)
+|_  256 01:5d:c8:7f:9a:8d:42:5a:bb:23:f0:bb:17:ab:62:8e (ED25519)
+5000/tcp open  http    Node.js (Express middleware)
+|_http-title: PUG to HTML
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov  5 14:43:38 2022 -- 1 IP address (1 host up) scanned in 39.98 seconds
